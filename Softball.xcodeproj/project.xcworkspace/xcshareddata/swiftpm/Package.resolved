@@ -1,0 +1,15 @@
+{
+  "originHash" : "0987baf9c5b53ccc9b1d47f65716a8957cc5b2e7c55db952470e3dfd9e0fab61",
+  "pins" : [
+    {
+      "identity" : "tempuskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lawndart0381/TempusKit",
+      "state" : {
+        "branch" : "feature/baseball-drills-images-model",
+        "revision" : "5981d0a9c902677d1868ef27f68ecc9389ae40e4"
+      }
+    }
+  ],
+  "version" : 3
+}

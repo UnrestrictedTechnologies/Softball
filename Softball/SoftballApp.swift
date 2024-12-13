@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import TempusKit
+import SwiftData
 
 @main
 struct SoftballApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            .environment(TimerViewModel())
         }
+        .modelContainer(for: TempusPlayer.self)
     }
 }
