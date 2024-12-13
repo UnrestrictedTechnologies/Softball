@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41BDBED22D0C575B00BAF1AE /* TempusKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41BDBED12D0C575B00BAF1AE /* TempusKit */; };
+		411548952D0C766E00812997 /* TempusKit in Frameworks */ = {isa = PBXBuildFile; productRef = 411548942D0C766E00812997 /* TempusKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41BDBED22D0C575B00BAF1AE /* TempusKit in Frameworks */,
+				411548952D0C766E00812997 /* TempusKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = Softball;
 			packageProductDependencies = (
-				41BDBED12D0C575B00BAF1AE /* TempusKit */,
+				411548942D0C766E00812997 /* TempusKit */,
 			);
 			productName = Softball;
 			productReference = 414EDC0D2D03B1E300D30056 /* Softball.app */;
@@ -101,7 +101,7 @@
 			mainGroup = 414EDC042D03B1E200D30056;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				41BDBED02D0C575B00BAF1AE /* XCRemoteSwiftPackageReference "TempusKit" */,
+				411548932D0C766E00812997 /* XCRemoteSwiftPackageReference "TempusKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 414EDC0E2D03B1E300D30056 /* Products */;
@@ -254,10 +254,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Softball/Softball.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Softball/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Y6G3JTUS8;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3Y6G3JTUS8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -276,13 +279,16 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.unrestrictedtechnologies.Softball;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unrestrictedtechnologies.tempus-softball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Tempus-Softball-DEV";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Debug;
@@ -293,10 +299,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Softball/Softball.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Softball/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Y6G3JTUS8;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 3Y6G3JTUS8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -315,13 +324,16 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.unrestrictedtechnologies.Softball;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unrestrictedtechnologies.tempus-softball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Tempus-Softball-DEV";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
@@ -350,7 +362,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		41BDBED02D0C575B00BAF1AE /* XCRemoteSwiftPackageReference "TempusKit" */ = {
+		411548932D0C766E00812997 /* XCRemoteSwiftPackageReference "TempusKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lawndart0381/TempusKit";
 			requirement = {
@@ -361,9 +373,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		41BDBED12D0C575B00BAF1AE /* TempusKit */ = {
+		411548942D0C766E00812997 /* TempusKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 41BDBED02D0C575B00BAF1AE /* XCRemoteSwiftPackageReference "TempusKit" */;
+			package = 411548932D0C766E00812997 /* XCRemoteSwiftPackageReference "TempusKit" */;
 			productName = TempusKit;
 		};
 /* End XCSwiftPackageProductDependency section */
