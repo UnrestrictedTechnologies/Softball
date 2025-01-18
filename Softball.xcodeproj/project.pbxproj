@@ -366,7 +366,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lawndart0381/TempusKit";
 			requirement = {
-				branch = main;
+				branch = "feature/add-fixed-sounds";
 				kind = branch;
 			};
 		};
