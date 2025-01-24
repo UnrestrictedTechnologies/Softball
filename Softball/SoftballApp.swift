@@ -15,6 +15,8 @@ struct SoftballApp: App {
         WindowGroup {
             ContentView()
             .environment(TimerViewModel())
+            .preferredColorScheme(.dark)
+            .dynamicTypeSize(DynamicTypeSize.xSmall...DynamicTypeSize.xLarge)
         }
         .modelContainer(for: TempusPlayer.self)
     }
