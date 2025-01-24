@@ -12,7 +12,6 @@
 
 /* Begin PBXFileReference section */
 		414EDC0D2D03B1E300D30056 /* Softball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softball.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		419ADB802D3EF41D00AEC1FD /* TempusKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TempusKit; path = ../TempusKit; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,7 +37,6 @@
 		414EDC042D03B1E200D30056 = {
 			isa = PBXGroup;
 			children = (
-				419ADB802D3EF41D00AEC1FD /* TempusKit */,
 				414EDC0F2D03B1E300D30056 /* Softball */,
 				414EDC0E2D03B1E300D30056 /* Products */,
 			);
@@ -362,7 +360,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lawndart0381/TempusKit";
 			requirement = {
-				branch = "feature/add-fixed-sounds";
+				branch = main;
 				kind = branch;
 			};
 		};

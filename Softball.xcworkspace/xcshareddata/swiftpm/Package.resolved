@@ -1,0 +1,15 @@
+{
+  "originHash" : "0987baf9c5b53ccc9b1d47f65716a8957cc5b2e7c55db952470e3dfd9e0fab61",
+  "pins" : [
+    {
+      "identity" : "tempuskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lawndart0381/TempusKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "946785912d95d198492c49a9df318f8462d5f520"
+      }
+    }
+  ],
+  "version" : 3
+}
