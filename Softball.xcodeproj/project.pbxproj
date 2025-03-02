@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		411548952D0C766E00812997 /* TempusKit in Frameworks */ = {isa = PBXBuildFile; productRef = 411548942D0C766E00812997 /* TempusKit */; };
+		480563F12D6D1F1700E95B14 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480563F02D6D1F1600E95B14 /* StoreKit.framework */; };
+		48BE13BE2D73E2820077E573 /* Tempus-Softball.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 48BE13BD2D73E2820077E573 /* Tempus-Softball.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		414EDC0D2D03B1E300D30056 /* Softball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		480563F02D6D1F1600E95B14 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		488668422D3B1D65004E42ED /* TempusKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TempusKit; path = ../TempusKit; sourceTree = SOURCE_ROOT; };
+		48BE13BD2D73E2820077E573 /* Tempus-Softball.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tempus-Softball.storekit"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -28,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411548952D0C766E00812997 /* TempusKit in Frameworks */,
+				480563F12D6D1F1700E95B14 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +43,10 @@
 		414EDC042D03B1E200D30056 = {
 			isa = PBXGroup;
 			children = (
+				48BE13BD2D73E2820077E573 /* Tempus-Softball.storekit */,
+				488668422D3B1D65004E42ED /* TempusKit */,
 				414EDC0F2D03B1E300D30056 /* Softball */,
+				480563EF2D6D1F1600E95B14 /* Frameworks */,
 				414EDC0E2D03B1E300D30056 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +57,14 @@
 				414EDC0D2D03B1E300D30056 /* Softball.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		480563EF2D6D1F1600E95B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				480563F02D6D1F1600E95B14 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +101,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					414EDC0C2D03B1E300D30056 = {
 						CreatedOnToolsVersion = 16.1;
@@ -118,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BE13BE2D73E2820077E573 /* Tempus-Softball.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +186,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -229,6 +248,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -255,10 +275,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Softball/Softball.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Softball/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Y6G3JTUS8;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J4T8DC6268;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -276,10 +299,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.unrestrictedtechnologies.tempus-softball";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempusathletics.softball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Tempus-Softball-DEV";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -297,10 +321,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Softball/Softball.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Softball/Preview Content\"";
-				DEVELOPMENT_TEAM = 3Y6G3JTUS8;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = J4T8DC6268;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -318,10 +345,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.unrestrictedtechnologies.tempus-softball";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempusathletics.softball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Tempus-Softball-DEV";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
