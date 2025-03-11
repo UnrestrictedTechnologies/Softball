@@ -10,12 +10,13 @@ import TempusKit
 
 struct ContentView: View {
   @Environment(\.modelContext) var modelContext
-    var body: some View {
-      TempusTabview(appName: .softball)
-    }
+  @Environment(\.appName) var appName
+  var body: some View {
+    TempusTabview()
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
     .environment(TimerViewModel())
 }

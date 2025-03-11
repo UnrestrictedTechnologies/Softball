@@ -15,7 +15,6 @@
 /* Begin PBXFileReference section */
 		414EDC0D2D03B1E300D30056 /* Softball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		480563F02D6D1F1600E95B14 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		488668422D3B1D65004E42ED /* TempusKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TempusKit; path = ../TempusKit; sourceTree = SOURCE_ROOT; };
 		48BE13BD2D73E2820077E573 /* Tempus-Softball.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Tempus-Softball.storekit"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				48BE13BD2D73E2820077E573 /* Tempus-Softball.storekit */,
-				488668422D3B1D65004E42ED /* TempusKit */,
 				414EDC0F2D03B1E300D30056 /* Softball */,
 				480563EF2D6D1F1600E95B14 /* Frameworks */,
 				414EDC0E2D03B1E300D30056 /* Products */,
