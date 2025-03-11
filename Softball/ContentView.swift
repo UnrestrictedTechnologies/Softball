@@ -10,8 +10,9 @@ import TempusKit
 
 struct ContentView: View {
   @Environment(\.modelContext) var modelContext
+  @Environment(\.appName) var appName
   var body: some View {
-    TempusTabview(appName: .softball)
+    TempusTabview()
   }
 }
 

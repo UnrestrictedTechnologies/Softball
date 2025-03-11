@@ -43,7 +43,10 @@
         "name" : "Verification"
       },
       {
-        "current" : null,
+        "current" : {
+          "index" : 4,
+          "type" : "generic"
+        },
         "enabled" : false,
         "name" : "App Store Sync"
       },
